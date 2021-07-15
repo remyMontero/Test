@@ -12,3 +12,6 @@ git commit -m "First Commit"
 git push origin master
 
 git help
+
+# Creating and adding SSH key tutorial
+https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
