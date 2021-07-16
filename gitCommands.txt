@@ -15,3 +15,51 @@ git help
 
 # Creating and adding SSH key tutorial
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+----------PowerShell
+
+get-help
+get-command
+You can create your own aliasses cmdlets
+
+get-service -> list all services
+
+get-service | |where-oject{$_.status -eq "stopped"}
+
+get-service | get-member --> Show all specific properties, methods for the particular object
+
+#create functions useful for datetime and mathematical equations
+
+function add
+{
+$add =[int](2+2)
+write-output "$add"
+}
+
+# risk mitigation parameter
+-whatif --> shows you what is going to happen
+-confirm --> you gotta confirm for each object
+
+#Integrated Scripting Environment ISE GUI
+
+#output
+We need to ensure to follow step by step. For example if sorting we need to sort the data before showing.
+
+# creating a text file
+
+get-service | out-file C:\Users\remym\Documents\Powershell\services.txt
+
+#out-gridview
+This parameter is very useful when trying to display and manipulate data
+get-service | out-gridview
+get-service | select-object * | out-gridview
+
+#running powershell remotely
+get-service -computername webserver
+
+#show modules
+Get-Module -ListAvailable
+
+#policies
+get-executionpolicy
