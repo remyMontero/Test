@@ -63,3 +63,10 @@ Get-Module -ListAvailable
 
 #policies
 get-executionpolicy
+
+#running into policy issues, by pass with this command for only current session
+
+
+powershell.exe -File "c:\users\remym\documents\powershell\samplePS.ps1"
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy  ByPass
