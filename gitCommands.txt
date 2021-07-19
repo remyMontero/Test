@@ -70,3 +70,22 @@ get-executionpolicy
 powershell.exe -File "c:\users\remym\documents\powershell\samplePS.ps1"
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy  ByPass
+
+-- Downloaded Docker in Windows 10 Home
+
+
+-----Docker
+https://www.youtube.com/watch?v=pMO26j2OUME
+
+remymontero
+remymontero@gmail.com
+#agregar Wall and age
+
+#jenkins
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11
+
+#After downloading
+docker ps #check of docker container is running
+
+docker logs <<container id>> 
+
