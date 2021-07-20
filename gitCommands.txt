@@ -16,6 +16,9 @@ git help
 # Creating and adding SSH key tutorial
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
+#git create new branch
+git checkout -b dev master # creates branch from master 
+git push -u origin dev
 
 ----------PowerShell
 
@@ -87,5 +90,30 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 #After downloading
 docker ps #check of docker container is running
 
-docker logs <<container id>> 
+docker logs <<container id>> # check logs to get pwd for initial set up
+
+#Afterd completed plugins download, create First Admin
+#Username: admin
+#Pwd: admin
+
+#create a new pipeline: remy-pipeline -> multibranch pipeline
+
+#create Credentials Global -> global/global
+#Create Credentials System -> System/System
+
+
+## configuring trigger build
+- Push notifications -> Git commits notify jenkins about the changes -> More efficient and common practice
+- Polling -> jenking polls in regular intervalls
+
+you need to configure both repo and jenkings
+1 install jenkins plugins 
+2 Configure repo server host name
+3 access token or credential
+
+It is common practice to configure both options
+
+
+
+
 
